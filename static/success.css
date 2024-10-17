@@ -1,0 +1,88 @@
+
+    /* Add some basic styling to the page */
+    body {
+      color: white;
+      font-family: sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%,-90%);
+      transform: translate(-50%,-90%);
+    }
+
+    h1 {
+      color: #007bff;
+      font-size: 36px;
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    p {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    a {
+      color: #007bff;
+    }
+
+
+
+/* ------------ new code ------------ */
+    body {
+      background-color: #282C34;
+    }
+    .logo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 10px;
+      max-height: 50px;
+    }
+    .box {
+      max-width: 500px;
+      margin: 0 auto;
+      background-color: #1F2226;
+      padding: 60px;
+      border-radius: 10px;
+      box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+      margin-top: 80px; /* added margin to make space for the logo */
+    }
+    label {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 5px;
+      color: #F95109
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 12px 20px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+    input[type="submit"] {
+      background-color: #F95109;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    input[type="submit"]:hover {
+      background-color: #F95109
+    }
+    .error {
+      color: red;
+      margin-top: 10px;
+      text-align: center;
+    }
