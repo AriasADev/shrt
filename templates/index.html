@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}">
+  <title>shrt - URL Shortener</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/index.css">
+  </head>
+<body>
+    <h1>shrt.wtf</h1>
+  <img src="{{ url_for('static', filename='logo.png') }}" alt="My Logo" class="logo">
+
+  <form method="post" action="/shorten">
+    <label>Enter the URL you want to shorten:</label>
+    <input type="text" name="url" required>
+
+    <label>Choose a custom shortened URL (optional):</label>
+    <input type="text" name="custom_url">
+
+    <input type="submit" value="Shorten">
+  </form>
+
+  {% if error %}
+    <p class="error">{{ error }}</p>
+  {% endif %}
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+  
+</div>
+
+</html>

@@ -1,0 +1,19 @@
+
+  <link href="style.css" rel="stylesheet" type="text/css" />
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}">
+  <link rel="stylesheet" href="/static/success.css">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>shrt - URL Shortener</title>
+</head>
+<body>
+  <div class="box">
+    <h1>Success!</h1>
+    <p>Your shortened URL is:</p>
+    <p><a href="{{ request.host_url }}{{ short_url }}" target="_blank">{{ request.host_url }}{{ short_url }}</a></p>
+  </div>
+</body>
+
+</html>
